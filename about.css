@@ -1,0 +1,25 @@
+.i{
+	background-color:#ede2e1;
+}
+.pra{
+	font-size:20px;
+}
+.button_container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 38px;
+}
+.back_button{
+	font-size: 20px;
+	padding: 16px;
+	background-color: gray;
+	border: none;
+	border-radius: 5px;
+	color: white;
+}
+.back_button:hover{
+	cursor: pointer;
+	background-color: rgb(109, 105, 105);
+	color: whitesmoke;
+}

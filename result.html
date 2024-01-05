@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Result</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #scoreDisplay {
+            font-size: 24px;
+            color: skyblue; /* skyblue color for the score */
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz Result</h1> &nbsp &nbsp;
+    <p>Your score is :  </p>
+    <p id="scoreDisplay"></p>
+
+    <script>
+        // Retrieve the score from the session variable
+        const score = sessionStorage.getItem('score');
+        
+        // Check if the score is not null (it should not be null if the user completed the quiz)
+        if (score !== null) {
+            document.getElementById('scoreDisplay').textContent =   `${score} out of 10`;
+        } else {
+            document.getElementById('scoreDisplay').textContent = 'N/A';
+        }
+    </script>
+</body>
+</html>
